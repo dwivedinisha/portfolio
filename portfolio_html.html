@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="portfolio_css.css">
+</head>
+<body>
+    <!-- Rain Background Animation -->
+    <div class="bg-animation" id="bgAnimation"></div>
+    <div class="rain-ground" id="rainGround"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="audio-control" id="audioToggle">🎵 Music</button>
+        </div>
+    </nav>
+   
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="welcome">
+            <div class="welcome-container">
+                <h1>WELCOME</h1>
+                <p>Initializing portfolio system...</p>
+                <p>Loading modules: [About, Projects, Contact]</p>
+                <ul>
+                    <li>Module 1: About Me</li>
+                    <li>Module 2: Projects</li>
+                    <li>Module 3: Contact Info</li>
+                </ul>
+                <p>SYSTEM LOG</p>
+                <p>All systems operational.</p>
+                <p><span class="echo">echo</span> "Welcome to my portfolio!"</p>
+            </div>
+        </div>
+        <div class="container">
+            <h1>NISHA DWIVEDI</h1>
+            <p class="subtitle">Creative Developer & Designer</p>
+            <p class="description">
+                Crafting beautiful digital experiences with modern technologies. 
+                Passionate about creating innovative solutions that make a difference.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                        <div class="profile-card">
+                            <img class="profile-img" src="image.jpg" alt="not visible">
+                            <h3>Professional Developer</h3>
+                            <p>Turning ideas into reality through code</p>
+                        </div>
+            </div>
+            <!-- <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hey there! I’m Nisha Dwivedi, a problem-solver, open-source contributor, and full-stack developer in the making. Currently pursuing my B.Tech in Computer Science (with Artificial Intelligence as my specialization), I’m on a mission to master full-stack development by the end of 2025 and build tech that makes an impact. I’ve already worked on some pretty cool projects, including:
+                </p>
+                <p>
+                    # WhitePaper(Open-source) – An open-source digital notepad built with Django, making note-taking effortless.<br>
+                    # Gesture-Based Home Automation – A smart home system using OpenCV & Arduino, designed to help the elderly control appliances with simple hand gestures.
+                </p>
+                <p>
+                    Beyond projects, I’ve have participated in various coding competition, and I’m gearing up for Google Summer of Code 2025, aiming to contribute to impactful open-source projects. I’m constantly pushing my limits, learning new technologies, and striving to create efficient, scalable, and innovative solutions. My ultimate goal? To become a top-tier full-stack developer and build a financially successful career doing what I love. Let’s connect and build something awesome together!
+
+
+                </p>
+            </div> -->
+            <div class="about-text">
+                <h2>About Me</h2>
+
+                <p>
+                    Hey there! I’m Nisha Dwivedi, a problem-solver, open-source contributor, and full-stack developer in the making. Currently pursuing my B.Tech in Computer Science (with Artificial Intelligence as my specialization), I’m on a mission to master full-stack development by the end of 2025 and build tech that makes an impact. I’ve already worked on some pretty cool projects, including:
+                </p>
+
+                <div id="short-text">
+                    <p>
+                        # WhitePaper (Open-source) – An open-source digital notepad built with Django, making note-taking effortless.<br>
+                        # Gesture-Based Home Automation – A smart home system using OpenCV & Arduino, designed to help the elderly control appliances with simple hand gestures.
+                    </p>
+                </div>
+
+                <div id="more-text" style="display: none;">
+                    <p>
+                        Beyond projects, I’ve participated in various coding competitions, and I’m gearing up for Google Summer of Code 2025, aiming to contribute to impactful open-source projects. I’m constantly pushing my limits, learning new technologies, and striving to create efficient, scalable, and innovative solutions. My ultimate goal? To become a top-tier full-stack developer and build a financially successful career doing what I love. Let’s connect and build something awesome together!
+                    </p>
+                </div>
+
+                <button id="toggle-btn">View More</button>
+        </div>
+
+            
+        </div>
+        <!-- Navigation for Skills, Education, Achievements -->
+        <div class="about-nav">
+            <ul class="about-tabs">
+                <li class="tab active" data-tab="skills">Skills</li>
+                <li class="tab" data-tab="education">Education</li>
+                <li class="tab" data-tab="achievements">Achievements</li>
+            </ul>
+        </div>
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Skills Section -->
+            <div id="skills" class="tab-pane active">
+                <h3>Programming Languages:</h3>
+                <p>Python, Java,c++, HTML5, CSS3, JS, SQL</p>
+                <h3>DBMS:</h3>
+                <p>SQL Server</p>
+                <h3>Other Tools & Technologies:</h3>
+                <p>Git & GitHub, VS Code, Arduino</p>
+            </div>
+            <!-- Education Section -->
+            <div id="education" class="tab-pane">
+                <h3>Education</h3>
+                <p><strong># XII Grade (94%)</strong></p>
+                <p>T.G.S.S.School</p>
+                <p><strong># X Grade (97.4%)</strong></p>
+                <p>T.G.S.S.School</p>
+                <p><strong># Bachelor of Technology in CSE(AI)</strong></p>
+                <p>CGPA-9.2</p>
+                <p>KIET Group of institutions</p>
+                
+            </div>
+            <!-- Achievements Section -->
+            <div id="achievements" class="tab-pane">
+                <h3>Achievements</h3>
+                <ul>
+                    <li>High School district topper</li>
+                    <li>Intermediate School Topper(Mathematics)</li>
+                    <li>Dainik Jagaran (Certificate of Achievement)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>🍔 Restaurant Ordering App</h3>
+                    <p>                        A modern and responsive web application designed to simplify the restaurant ordering experience for customers and restaurants alike.</p>
+                    <p>🌟 Features<br>
+                        🖼️ Intuitive User Interface <br>
+                        ⚡ Real-time Order Management <br>
+                        🧑‍🍳 Customizable Orders<br>
+                        🔒 Secure Authentication<br> 
+                        💳 Multiple Payment Options<br>
+                        🎁 Promotions & Discounts <br>
+                        📱 Responsive Design</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">javascript</span>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        👉Demo Link: <a href="https://restaurant-ordering-app-ashy.vercel.app/" target="_blank">https://restaurant-ordering-app-ashy.vercel.app/</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>🐦 X-Clone (Twimba)</h3>
+                    <p>A real-time social media web application inspired by X (formerly Twitter).</p>
+                    <p>🌟 Features<br>
+                        🧑‍💻 Real-Time Post Feed<br>
+                        🔐 Secure Authentication <br>
+                        ✍️ Post Creation<br>
+                        ❤️ Like & Comment<br> 
+                        🔁 Share Posts<br>
+                        👤 User Profiles<br>
+                        📱 Responsive Design</p>
+                   <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">javascript</span>
+                        <span class="tag">Responsive Designs</span>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        👉Demo Link: <a href="https://x-clone-xjf1.vercel.app/" target="_blank">https://x-clone-xjf1.vercel.app/</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>🏘️ Community Notice Board</h3>
+                    <p>A web application designed to facilitate communication within residential communities by allowing residents to post notices, report issues, and maintain a directory of community members.</p>
+                    <p>✅ Key Features:<br>
+                        📝 Post new community notices<br>
+                        🔍 Browse and filter existing announcements<br>
+                        📱 Mobile-friendly, responsive design<br>
+                        ⚡ Built with performance and simplicity in mind.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">javascript</span>
+                        <span class="tag">Responsive Designs</span>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        👉Demo Link: <a href="https://community-notice-board.vercel.app/" target="_blank">https://community-notice-board.vercel.app/</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Work Together</h2>
+                <p>
+                    Ready to bring your ideas to life? I'm always excited to work on 
+                    new projects and collaborate with amazing people.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">📧</div>
+                        <h4>Email</h4>
+                        <p>dwivedinisha248@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">📱</div>
+                        <h4>Phone</h4>
+                        <p>+91 9336592163</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">📍</div>
+                        <h4>Location</h4>
+                        <p>Ghaziabad, India</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://github.com/dwivedinisha" target="_blank" class="social-link">
+                        <img src="images\github.webp" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/nisha-dwivedi-827545328/" target="_blank" class="social-link">
+                        <img src="images\linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/_.ishu.dwivedi._?igsh=cmJ2d3Q4cHJleWtj" target="_blank" class="social-link">
+                        <img src="images\insta.png" alt="Instagram">
+                    </a>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Audio -->
+    <audio id="backgroundMusic" loop></audio>
+
+    <script src="portfolio_js.js"></script>
+</body>
+</html>
