@@ -22,6 +22,7 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden;
+    zoom: 75%;
 }
 
 /* Animated rain background */
